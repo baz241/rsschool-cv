@@ -1,10 +1,10 @@
-# My name
+# Maksim Kondakov
 
 # Contact Info
 
-* **E-mail:** [maksim.kondakov.0@gmail.com](maksim.kondakov.0@gmail.com)
+* **E-mail:** [manulmanulov425@gmail.com](manulmanulov425@gmail.com)
 * **GitHub:** [baz241](https://github.com/baz241)
-* **Discord:**
+* **Discord:** [@baz241]
 * **LeetCode:** [baz241](https://leetcode.com/u/baz241/)
 
 
