@@ -1,9 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Maksim Kondakov CV</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">About</li>
+            <li class="header-nav-item">Skills</li>
+            <li class="header-nav-item">Code</li>
+            <li class="header-nav-item">Education</li>
+            <li class="header-nav-item">Experience</li>
+            <li class="header-nav-item">Languages</li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <aside class="left-side">
+          <figure class="figure-left-side">
+            <img
+              class="figure-left-side-photo"
+              src="img/photo.jpg"
+              alt="My photo"
+            />
+          </figure>
+          <section class="contacts">
+            <h2 class="contacts-title">Contacts</h2>
+            <ul class="contacts-list">
+              <li class="contacts-list-item">
+                <a href="tel:+78005553535" target="_blank">Phone</a>
+              </li>
+              <li class="contacts-list-item">
+                <a href="mailto:manulmanulov425@gmail.com">E-mail</a>
+              </li>
+              <li class="contacts-list-item">
+                <a href="#" target="_blank">Telegram</a>
+              </li>
+            </ul>
+          </section>
+          <section class="education">
+            <h2 class="education-title">Education</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              eligendi eum ad ut, quam corrupti facilis iusto nisi magnam
+              praesentium. Fugiat aliquid animi reiciendis eaque in earum quos,
+              exercitationem tenetur!
+            </p>
+          </section>
+          <section class="links">
+            <h2 class="links-title">Links</h2>
+            <ul class="links-list">
+              <li class="links-item">
+                <a href="https://github.com/baz241" target="_blank">GitHub</a>
+              </li>
+              <li class="links-item">
+                <a href="https://leetcode.com/u/baz241/" target="_blank"
+                  >LeetCode</a
+                >
+              </li>
+              <li class="links-item">
+                <a href="#" target="_blank">Discord</a>
+              </li>
+            </ul>
+          </section>
+        </aside>
+        <section class="right-side">
+          <section class="name">
+            <h1>Manul Manulov</h1>
+            <p>Junior</p>
+          </section>
+          <section class="about-me">
+            <h2 class="about-me-title">About me</h2>
+            <p class="about-me-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate, magnam. Necessitatibus omnis repudiandae minus
+              repellat accusamus et pariatur facilis? Harum hic minus cupiditate
+              ea id fuga natus! Nemo, odio alias.
+            </p>
+          </section>
+          <section class="skills">
+            <h2 class="skills-title">Skills</h2>
+            <p class="skills-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              accusamus at aspernatur eaque aliquam soluta maiores rerum, ullam
+              fugit in laborum voluptatum a blanditiis. Eos voluptatibus laborum
+              culpa sint hic.
+            </p>
+          </section>
+          <section class="code-example">
+            <h2 class="code-example-title">Code example</h2>
+            <pre>
+              const maxSubarray = (nums, k) => {
+                let left = 0;
+                let right = 0;
+                let max;
+                let sum = 0;
+                for (right; right < nums.length; right++) {
+                    sum += nums[right];
+                    if (right - left === k - 1) {
+                        if (max === undefined) {
+                            max = sum;
+                        } else if (sum > max) {
+                            max = sum;
+                        }
+                        sum -= nums[left];
+                        left += 1;
+                    }
+                }
+                return max / k;
+              }
+            </pre>
+          </section>
+        </section>
+      </main>
+      <footer>
+        <section class="footer-info">
+          <ul class="footer-info-list">
+            <li class="footer-info-item">GitHub Image</li>
+            <li class="footer-info-item">2024</li>
+            <li class="footer-info-item">RsSchool</li>
+          </ul>
+        </section>
+      </footer>
+    </div>
+  </body>
 </html>
