@@ -1,34 +1,26 @@
 .wrapper {
   max-width: 1000px;
   margin: auto;
-  border: 1px solid black;
 }
 
 header {
-    padding: 16px 0px 16px 0px;
-    background-color: aqua;
-    border: 1px solid black;
+  padding: 16px 0px 16px 0px;
 }
 
-.header-nav {
-    border: 1px solid black;
-}
+/* section {
+  border: 1px solid black;
+} */
 
 .header-nav-list {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-}
-
-.header-nav-item {
-    border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .left-side {
   max-width: 35%;
-  border: 1px solid black;
 }
 
 .figure-left-side {
@@ -40,23 +32,34 @@ header {
   height: 300px;
 }
 
-footer {
-    padding: 16px 0px 16px 0px;
-    background-color: blueviolet;
-    border: 1px solid black;
-}
-.footer-info-list {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-}
-
-.footer-info-item {
-    border: 1px solid black;
-}
-
 .main {
-    display: flex;
+  display: flex;
+}
+
+/* footer */
+footer {
+  padding: 16px 0px 16px 0px;
+}
+
+.footer-info-list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.footer-svg {
+  width: 50px;
+  height: 50px;
+}
+
+/* h2 */
+.h2-title {
+  background-color: aqua;
+  background-size: 10px;
+}
+
+.title {
+  width: 40px;
 }
